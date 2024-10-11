@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBA89A532CB97A0A00EA860B /* ControladorPantallaDelPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA89A522CB97A0A00EA860B /* ControladorPantallaDelPost.swift */; };
+		FBA89A562CB97A5200EA860B /* mod_navegador_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA89A552CB97A5200EA860B /* mod_navegador_principal.swift */; };
+		FBA89A592CB97BCC00EA860B /* provedor_publicaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA89A582CB97BCC00EA860B /* provedor_publicaciones.swift */; };
+		FBA89A5B2CB9855500EA860B /* EstiloCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA89A5A2CB9855500EA860B /* EstiloCellViewController.swift */; };
 		FBF3460D2CB6D2F800F555DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3460C2CB6D2F800F555DE /* AppDelegate.swift */; };
 		FBF3460F2CB6D2F800F555DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3460E2CB6D2F800F555DE /* SceneDelegate.swift */; };
 		FBF346142CB6D2F800F555DE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FBF346132CB6D2F800F555DE /* Base */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FBA89A522CB97A0A00EA860B /* ControladorPantallaDelPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaDelPost.swift; sourceTree = "<group>"; };
+		FBA89A552CB97A5200EA860B /* mod_navegador_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mod_navegador_principal.swift; sourceTree = "<group>"; };
+		FBA89A582CB97BCC00EA860B /* provedor_publicaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = provedor_publicaciones.swift; sourceTree = "<group>"; };
+		FBA89A5A2CB9855500EA860B /* EstiloCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloCellViewController.swift; sourceTree = "<group>"; };
 		FBF346092CB6D2F800F555DE /* Bocetos_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bocetos_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF3460C2CB6D2F800F555DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF3460E2CB6D2F800F555DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FBA89A542CB97A3100EA860B /* estilos */ = {
+			isa = PBXGroup;
+			children = (
+				FBA89A552CB97A5200EA860B /* mod_navegador_principal.swift */,
+				FBA89A5A2CB9855500EA860B /* EstiloCellViewController.swift */,
+			);
+			path = estilos;
+			sourceTree = "<group>";
+		};
+		FBA89A572CB97B7400EA860B /* proveedor */ = {
+			isa = PBXGroup;
+			children = (
+				FBA89A582CB97BCC00EA860B /* provedor_publicaciones.swift */,
+			);
+			path = proveedor;
+			sourceTree = "<group>";
+		};
 		FBF346002CB6D2F800F555DE = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +128,7 @@
 		FBF3460B2CB6D2F800F555DE /* Bocetos_2 */ = {
 			isa = PBXGroup;
 			children = (
+				FBA89A572CB97B7400EA860B /* proveedor */,
 				FBF346462CB6D79900F555DE /* Modelos */,
 				FBF3463D2CB6D62200F555DE /* controladores_de_pantalla */,
 				FBF3460C2CB6D2F800F555DE /* AppDelegate.swift */,
@@ -135,7 +161,9 @@
 		FBF3463D2CB6D62200F555DE /* controladores_de_pantalla */ = {
 			isa = PBXGroup;
 			children = (
+				FBA89A542CB97A3100EA860B /* estilos */,
 				FBF346422CB6D72200F555DE /* vista_de_celdas */,
+				FBA89A522CB97A0A00EA860B /* ControladorPantallaDelPost.swift */,
 			);
 			path = controladores_de_pantalla;
 			sourceTree = "<group>";
@@ -288,11 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA89A592CB97BCC00EA860B /* provedor_publicaciones.swift in Sources */,
+				FBA89A562CB97A5200EA860B /* mod_navegador_principal.swift in Sources */,
 				FBF3460D2CB6D2F800F555DE /* AppDelegate.swift in Sources */,
 				FBF346442CB6D75D00F555DE /* VistaDeZelda.swift in Sources */,
 				FBF346482CB6D7B700F555DE /* posts.swift in Sources */,
 				FBF3460F2CB6D2F800F555DE /* SceneDelegate.swift in Sources */,
+				FBA89A532CB97A0A00EA860B /* ControladorPantallaDelPost.swift in Sources */,
 				FBF3463F2CB6D67400F555DE /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
+				FBA89A5B2CB9855500EA860B /* EstiloCellViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

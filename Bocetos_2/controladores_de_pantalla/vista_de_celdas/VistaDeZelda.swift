@@ -10,6 +10,9 @@ import UIKit
 class VistaDeZelda: UICollectionViewCell {
     
     
-    @IBOutlet weak var etiqueta: UILabel!
+    @IBOutlet weak var titulo: UILabel!
+    
+    
+    @IBOutlet weak var cuerpo: UILabel!
     
 }

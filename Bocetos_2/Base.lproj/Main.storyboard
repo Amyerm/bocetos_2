@@ -32,21 +32,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2Fh-yr-pKa">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="257" height="224"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VPF-mI-GAt">
-                                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VPF-mI-GAt" customClass="VistaDeZelda" customModule="Bocetos_2" customModuleProvider="target">
+                                <rect key="frame" x="68" y="0.0" width="257" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aDV-QS-qb8">
-                                    <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="257" height="224"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M14-oe-g4J">
+                                            <rect key="frame" x="99" y="19" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvY-fX-yk3">
-                                            <rect key="frame" x="42" y="54" width="42" height="21"/>
+                                            <rect key="frame" x="99" y="91" width="42" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -55,6 +62,11 @@
                                     </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.3542861987" blue="0.7047091606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="257" height="224"/>
+                                <connections>
+                                    <outlet property="cuerpo" destination="SvY-fX-yk3" id="VJK-7d-FcL"/>
+                                    <outlet property="titulo" destination="M14-oe-g4J" id="4Wc-aB-8Gs"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -63,13 +75,10 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="68O-dy-fca"/>
-                    <connections>
-                        <outlet property="etiqueta" destination="SvY-fX-yk3" id="X3C-e8-97l"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2I-7M-RQS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="779" y="92"/>
+            <point key="canvasLocation" x="777.86259541984725" y="91.549295774647888"/>
         </scene>
     </scenes>
 </document>
