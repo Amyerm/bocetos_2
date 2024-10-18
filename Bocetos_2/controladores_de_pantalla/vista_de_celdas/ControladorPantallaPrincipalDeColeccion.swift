@@ -24,7 +24,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         super.viewDidLoad()
         
 
-        proveedor_publicaciones.obtener_publicaicones{
+        proveedor_publicaciones.obtener_publicaciones{
             [weak self] (publicaciones) in self?.lista_de_publicaciones = publicaciones
             DispatchQueue.main.async {
                 self?.collectionView.reloadData()
@@ -78,7 +78,12 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         
         let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
         
+        //pantalla_de_publicacion.id_publicacion = indexPath.item
+        pantalla_de_publicacion.id_publicacion = self.lista_de_publicaciones[indexPath.item].id
+        
         self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
+        
+        //self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
         
         //print(self.navigationController)
 
