@@ -23,8 +23,8 @@ class ProveedorDePublicaciones{
     
     private init() {}
     
-    func obtener_publicaciones(que_hacer_al_recibir: @escaping ([Publicacion]) -> Void) {
-    // func obtener_publicaicones() async throws -> [Publicacion] {
+    func obtener_publicaicones(que_hacer_al_recibir: @escaping ([Publicacion]) -> Void) {
+        /// Acmodamos la url para descargar en esta funcion los post directamente
         let ubicacion = URL(string: "\(url_de_publicaciones)posts")!
         URLSession.shared.dataTask(with: ubicacion) {
                 (datos, respuesta, error) in do {
@@ -38,13 +38,13 @@ class ProveedorDePublicaciones{
                         print(respuesta)
                     }
                 } catch {
-                    print("Error :(")
+                    print("Error")
                 }
         }.resume()
     }
     
-    func obtener_publicaciones(id: Int, que_hacer_al_recibir: @escaping (Publicacion) -> Void) {
-    // func obtener_publicaicones() async throws -> [Publicacion] {
+    func obtener_publicacion(id: Int, que_hacer_al_recibir: @escaping (Publicacion) -> Void) {
+        /// Acmodamos la url para descargar en esta funcion los post directamente
         let ubicacion = URL(string: "\(url_de_publicaciones)posts/\(id)")!
         URLSession.shared.dataTask(with: ubicacion) {
                 (datos, respuesta, error) in do {
@@ -64,14 +64,15 @@ class ProveedorDePublicaciones{
     
     func realizar_subida_de_publicacion(publicaicon_nueva: Publicacion) {
         // func obtener_publicaicones() async throws -> [Publicacion] {
-            let ubicacion = URL(string: url_de_publicaciones)!
-            URLSession.shared.dataTask(with: ubicacion) {
-                (datos, respuesta, error) in do {}
-            }.resume()
-        }
+        let ubicacion = URL(string: url_de_publicaciones)!
+        URLSession.shared.dataTask(with: ubicacion) {
+            (datos, respuesta, error) in do {}
+        }.resume()
+        
+    }
     
     func obtener_usuario(id: Int, que_hacer_al_recibir: @escaping (Usuario) -> Void) {
-    // func obtener_publicaicones() async throws -> [Publicacion] {
+        /// Acmodamos la url para descargar en esta funcion los post directamente
         let ubicacion = URL(string: "\(url_de_publicaciones)users/\(id)")!
         URLSession.shared.dataTask(with: ubicacion) {
                 (datos, respuesta, error) in do {
@@ -89,9 +90,8 @@ class ProveedorDePublicaciones{
         }.resume()
     }
     
-    
     func obtener_comentarios_en_publicacion(id: Int, que_hacer_al_recibir: @escaping ([Comentario]) -> Void) {
-    // func obtener_publicaicones() async throws -> [Publicacion] {
+        /// Acmodamos la url para descargar en esta funcion los post directamente
         let ubicacion = URL(string: "\(url_de_publicaciones)posts/\(id)/comments")!
         URLSession.shared.dataTask(with: ubicacion) {
                 (datos, respuesta, error) in do {
@@ -104,9 +104,8 @@ class ProveedorDePublicaciones{
                         print(respuesta)
                     }
                 } catch {
-                    print("Error :(")
+                    print("Error")
                 }
         }.resume()
     }
-    
 }
