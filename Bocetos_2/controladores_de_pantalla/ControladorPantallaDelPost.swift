@@ -17,7 +17,10 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var titulo_de_publicaciones: UILabel!
     @IBOutlet weak var nombre_de_usuario: UILabel!
     @IBOutlet weak var cuerpo_de_publicacion: UILabel!
+    
     @IBOutlet weak var seccion_comentarios: UICollectionView!
+    
+    
     public var id_publicacion: Int?
     
     private var publicacion: Publicacion?
@@ -95,14 +98,16 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             print("Aqui deberia hacer algo")
-            let celda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath)
+            let celda_comentario: VistaDeComentario = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath) as! VistaDeComentario
         
+            celda_comentario.comentario.text = self.lista_comentarios[indexPath.item].body
+            
             // Configure the cell
-            celda.tintColor = UIColor.green
-      
+            //celda.tintColor = UIColor.green
+
             // print(self.lista_de_publicaciones)
             
-            return celda
+            return celda_comentario
         }
         
 
