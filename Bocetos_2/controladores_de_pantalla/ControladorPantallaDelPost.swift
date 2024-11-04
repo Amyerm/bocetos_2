@@ -97,11 +97,13 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
             }
             
             func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-                print("Aqui denberia hacer algo")
+                print("Aqui deberia hacer algo")
                 let celda_comentario = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath) as! VistaDeComentario
                 
                 celda_comentario.comentario.text = self.lista_comentarios[indexPath.item].body
             
+                celda_comentario.layer.cornerRadius = 10
+                
                 // Configure the cell
                 //celda.tintColor = UIColor.green
           

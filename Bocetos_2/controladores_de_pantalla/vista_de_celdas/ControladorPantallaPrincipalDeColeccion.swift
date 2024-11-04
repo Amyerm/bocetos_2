@@ -27,8 +27,6 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
                 self?.collectionView.reloadData()
             }
         }
-        
-
     }
     
     
@@ -65,6 +63,8 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         
         celda.titulo.text = self.lista_de_publicaciones[indexPath.item].title
         celda.cuerpo.text = self.lista_de_publicaciones[indexPath.item].body
+        
+        celda.layer.cornerRadius = 10
 
         // print(self.lista_de_publicaciones)
         
